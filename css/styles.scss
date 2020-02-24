@@ -1,5 +1,22 @@
 $para-font: "Fanwood", sans-serif;
 
+.jumbotron {
+    background-color: #f7323f;
+    margin: 0;
+    padding: 10px;
+    p {
+        font-size: 13px;
+    }
+}
+
+.navbar {
+    background-color: #f7323f;
+    margin: 0;
+    li {
+        color: black;
+    }
+}
+
 p{
     font-family: $para-font;
 }

@@ -1,2 +1,15 @@
+.jumbotron {
+  background-color: #f7323f;
+  margin: 0;
+  padding: 10px; }
+  .jumbotron p {
+    font-size: 13px; }
+
+.navbar {
+  background-color: #f7323f;
+  margin: 0; }
+  .navbar li {
+    color: black; }
+
 p {
   font-family: "Fanwood", sans-serif; }
