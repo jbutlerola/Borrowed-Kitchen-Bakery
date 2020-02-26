@@ -1,15 +1,62 @@
+#parallax {
+  background-image: url("/img/sourdough.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px; }
+
+#parallax1 {
+  background-image: url("/img/cookies.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px; }
+
+#parallax2 {
+  background-image: url("/img/multigrain.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 50px;
+  height: 700px; }
+
 .jumbotron {
-  background-color: #f7323f;
+  background-color: rgba(0, 0, 0, 0);
   margin: 0;
   padding: 10px; }
   .jumbotron p {
     font-size: 13px; }
 
-.navbar {
-  background-color: #f7323f;
-  margin: 0; }
-  .navbar li {
-    color: black; }
+.overlap {
+  position: absolute;
+  width: 100%;
+  top: 0; }
+
+nav {
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 200px; }
+  nav .nav-link {
+    color: black;
+    font-size: larger; }
+  nav .nav-link:hover {
+    text-decoration: underline; }
+
+#main {
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 500px; }
+
+#carouselTitle {
+  margin: 0;
+  color: white;
+  font-style: italic; }
+
+.carousel-inner {
+  border-radius: 10px; }
 
 p {
   font-family: "Fanwood", sans-serif; }
