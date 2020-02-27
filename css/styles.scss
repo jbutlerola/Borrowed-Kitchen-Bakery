@@ -7,6 +7,7 @@ $para-font: "Fanwood", sans-serif;
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
+    margin-bottom: 500px;
 }
 
 #parallax1 {
@@ -28,20 +29,22 @@ $para-font: "Fanwood", sans-serif;
     height: 700px;
 }
 
+.overlap {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
 .jumbotron {
     background-color: rgba(0, 0, 0, 0);
     margin: 0;
     padding: 10px;
     p {
         font-size: 13px;
+        font-weight: bold;
     }
 }
 
-.overlap {
-    position: absolute;
-    width: 100%;
-    top: 0;
-}
 
 nav {
     // background-color: #f7323f;
@@ -56,11 +59,22 @@ nav {
     }
 }
 
+.navRed {
+    animation-name: makeRed;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes makeRed {
+    from { background-color: rgba(0, 0, 0, 0); }
+    to { background-color: #f7323f; }
+}
 #main {
-    background-color: white;
+    padding: 15px;
     border-radius: 10px;
-    text-align: center;
     margin-bottom: 500px;
+    border-radius: 25px;
+
 }
 
 #carouselTitle {
