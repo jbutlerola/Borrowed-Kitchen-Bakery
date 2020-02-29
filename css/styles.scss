@@ -1,4 +1,11 @@
 $para-font: "Fanwood", sans-serif;
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: $para-font;
+    color: #222;
+    margin: 0;
+}
 
 #parallax {
     background-image: url('/img/sourdough.jpg');
@@ -7,7 +14,6 @@ $para-font: "Fanwood", sans-serif;
     background-repeat: no-repeat;
     background-position: center;
     height: 500px;
-    margin-bottom: 500px;
 }
 
 #parallax1 {
@@ -17,6 +23,7 @@ $para-font: "Fanwood", sans-serif;
     background-repeat: no-repeat;
     background-position: center;
     height: 700px;
+
 }
 
 #parallax2 {
@@ -25,8 +32,14 @@ $para-font: "Fanwood", sans-serif;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 50px;
+
     height: 700px;
+}
+.main-content {
+    background-color: #fefef2;
+}
+.padding {
+    padding-bottom: 2rem;
 }
 
 .overlap {
@@ -40,7 +53,7 @@ $para-font: "Fanwood", sans-serif;
     margin: 0;
     padding: 10px;
     p {
-        font-size: 13px;
+        font-size: 0.8rem;
         font-weight: bold;
     }
 }
@@ -49,44 +62,68 @@ $para-font: "Fanwood", sans-serif;
 nav {
     // background-color: #f7323f;
     background-color: rgba(0, 0, 0, 0);
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     .nav-link {
         color: black;
-        font-size: larger;
+        font-size: 1.3rem;
     }
     .nav-link:hover {
         text-decoration: underline;
+        font-size: 1.4rem;
     }
 }
 
-.navRed {
+.navAnimation {
     animation-name: makeRed;
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
 }
 
-@keyframes makeRed {
-    from { background-color: rgba(0, 0, 0, 0); }
-    to { background-color: #f7323f; }
+.listAnimation {
+    animation-name: givePadding;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes givePadding {
+    from {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    to {
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+}
+@keyframes makeRed {
+    from { 
+            background-color: rgba(0, 0, 0, 0); 
+         }
+    to { 
+            background-color: #f7323f; 
+       }
+}
+
 #main {
     padding: 15px;
     border-radius: 10px;
-    margin-bottom: 500px;
     border-radius: 25px;
 
 }
 
 #carouselTitle {
     margin: 0;
-    color: white;
-    font-style: italic;
 }
 
 .carousel-inner {
-    border-radius: 10px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
-p {
-    font-family: $para-font;
+.menu {
+    margin-bottom: 50px;
 }
+
+
